@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,58 +20,98 @@
         nav a:hover {
             text-decoration: underline;
         }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 80px;
+            padding: 50px 40px;
+        }
+
+        .left, .right {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .card {
+            width: 420px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: black;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .right img {
+            width: 380px;
+            border-radius: 12px;
+        }
     </style>
 </head>
+
 <body>
 
-    <div style="display:flex; justify-content:space-between; align-items:center; padding:15px 30px; border-bottom:1px solid #ddd;">
-        <div style="font-size:30px; font-weight:bold;">
-            Școala de Dans
-        </div>
 
-        <nav style="display:flex; gap:50px; font-size:18px;">
-            <a href="index.html">Home</a>
-            <a href="cursuri.html">Cursuri</a>
-            <a href="instructorii.html">Instructori</a>
-            <a href="evenimente.html">Evenimente</a>
-            <a href="galerie.html">Galerie</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+<div style="display:flex; justify-content:space-between; align-items:center; padding:15px 30px; border-bottom:1px solid #ddd;">
+    <div style="font-size:30px; font-weight:bold;">
+        Școala de Dans
     </div>
 
-    <div style="display:flex; justify-content:center; align-items:flex-start; gap:120px; padding:40px 80px;">
+    <nav style="display:flex; gap:50px; font-size:18px;">
+        <a href="index.html">Home</a>
+        <a href="cursuri.html">Cursuri</a>
+        <a href="instructorii.html">Instructori</a>
+        <a href="evenimente.html">Evenimente</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
 
-    <!-- STANGA -->
-    <div style="display:flex; flex-direction:column; gap:30px;">
 
-        <div style="width:500px; padding:25px; text-align:center; border:1px solid #ddd; border-radius:12px; background:#fff;">
+<div class="container">
 
+    
+    <div class="left">
+
+        <div class="card">
             <h2>📩 Formular de contact</h2>
 
-            <form style="display:flex; flex-direction:column; gap:15px;">
+            <form style="display:flex; flex-direction:column; gap:15px; margin-top:15px;">
 
-                <input type="text" placeholder="Nume complet"
-                       style="padding:12px; border:1px solid #ccc; border-radius:6px;">
+                <input type="text" placeholder="Nume complet">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Telefon">
+                <textarea placeholder="Mesaj"></textarea>
 
-                <input type="email" placeholder="Email"
-                       style="padding:12px; border:1px solid #ccc; border-radius:6px;">
-
-                <input type="tel" placeholder="Telefon"
-                       style="padding:12px; border:1px solid #ccc; border-radius:6px;">
-
-                <textarea placeholder="Mesaj"
-                          style="padding:12px; border:1px solid #ccc; border-radius:6px; min-height:120px;"></textarea>
-
-                <button style="background:black; color:white; padding:12px; border:none; border-radius:6px;">
-                    Trimite mesaj
-                </button>
+                <button>Trimite mesaj</button>
 
             </form>
-
         </div>
 
-        <div style="width:500px; padding:25px; text-align:center; border:1px solid #ddd; border-radius:12px; background:#fff;">
-
+        <div class="card">
             <h2>📞 Date de contact</h2>
 
             <p>📍 Strada Ritmului nr. 18, Craiova</p>
@@ -80,29 +120,17 @@
 
             <h3>🕒 Program</h3>
             <p>Luni - Vineri: 17:00 - 20:00<br>Sâmbătă: 10:00 - 14:00</p>
-
         </div>
 
     </div>
 
-    <!-- DREAPTA -->
-    <div style="display:flex; flex-direction:column; gap:20px;">
-
-        <img src="images/ballet studio.jpg" style="width:380px; border-radius:12px;">
-        <img src="images/ballet studio-2.jpg" style="width:380px; border-radius:12px;">
-
+    
+    <div class="right">
+        <img src="images/ballet studio.jpg">
+        <img src="images/ballet studio-2.jpg">
     </div>
 
 </div>
-
-    
-
-    
-
-
-
-    
-
 
 </body>
 </html>
