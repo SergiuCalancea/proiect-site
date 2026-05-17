@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F7F4EF;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.eveniment {
+    background: #fff;
+    border-radius: 12px;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.eveniment-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eveniment-header .emoji {
+    font-size: 32px;
+}
+
+.eveniment-header h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.eveniment-data {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+.eveniment-body {
+    padding: 25px 30px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #222;
+}
+
+.inscrieri {
+    background: #fff;
+    border-radius: 12px;
+    border: 2px dashed #bbb;
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.inscrieri h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.inscrieri p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn-contact {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.btn-contact:hover {
+    background: #333;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 50px 60px 20px;
+    margin-top: 20px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+}
+
+.footer-col h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col p,
+.footer-col a {
+    font-size: 14px;
+    line-height: 2;
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #666;
+}

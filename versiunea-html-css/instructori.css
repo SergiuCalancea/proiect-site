@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,10 +10,6 @@ body {
     color: black;
 }
 
-
-/* ════════════════════════════════════════
-   HEADER
-════════════════════════════════════════ */
 header {
     display: flex;
     justify-content: space-between;
@@ -43,59 +38,29 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-/* ════════════════════════════════════════
-   MAIN — Secțiunea „Despre"
-════════════════════════════════════════ */
-.despre {
+.instructor {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 200px;
     margin-top: 50px;
     padding: 15px 60px;
     border-bottom: 1px solid #ddd;
 }
 
-.despre img {
-    width: 550px;
+.instructor img {
+    width: 300px;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
-.despre-text {
+.instructor-text {
     font-size: 18px;
     line-height: 1.8;
 }
 
-.despre-text h2 {
-    margin-bottom: 12px;
-}
-
-.despre-text p {
+.instructor-text h2 {
     margin-bottom: 10px;
 }
-
-
-
-.info {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 200px;
-    margin-top: 40px;
-    padding: 15px 60px 40px;
-    border-bottom: 1px solid #ddd;
-}
-
-.info h2,
-.info h3 {
-    margin-bottom: 10px;
-}
-
-.info p {
-    margin-bottom: 6px;
-}
-
-
 
 footer {
     background: #1a1a1a;
